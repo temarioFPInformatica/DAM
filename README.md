@@ -1,5 +1,5 @@
-# DAM
-Contenido realizado con el FP de Grado Superior en Desarrollo Aplicaciones Multiplataforma
+# Desarrollo Aplicaciones Multiplataforma
+Contenido de las asignaturas de el FP de Grado Superior en Desarrollo Aplicaciones Multiplataforma
 
 
 ## Asignaturas
