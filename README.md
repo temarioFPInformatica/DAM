@@ -8,6 +8,8 @@ Diseño e implementación de bases de datos relacionales, modelo ER, MySQL, Orac
     <td align="center"><a href="topics/devops/README.md"><img src="https://github.com/temarioFPInformatica/DAM/assets/142623413/69947c6d-45da-406e-a1d1-96262fd9d50e" width="75px;" height="75px;" alt="DevOps"/><br /><b>SQL</b></a></td>
     <td align="center"><a href="#network"><img src="https://github.com/temarioFPInformatica/DAM/assets/142623413/52b761ec-69eb-4f8a-a470-b13e79135564" width="75px;" height="75px;" alt="Network"/><br /><b>MongoDB</b></a></td>
     <td align="center"><a href="#hardware"><img src="https://github.com/temarioFPInformatica/DAM/assets/142623413/4ddb6e30-394f-4d90-bd86-b4328a6b104f" width="75px;" height="75px;" alt="PL/SQL"/><br /><b>PL/SQL</b></a></td>
+<td align="center"><a href="#hardware"><img src="https://github.com/temarioFPInformatica/DAM/assets/142623413/4a80b00f-049a-4e36-8348-c03c40304e00" width="75px;" height="75px;" alt="postgreSQL"/><br /><b>postgreSQL</b></a></td>
+<td align="center"><a href="#hardware"><img src="https://github.com/temarioFPInformatica/DAM/assets/142623413/40444db8-b5ba-4bcd-909b-d10af161d130" width="75px;" height="75px;" alt="Oracle DB"/><br /><b>Oracle DB</b></a></td>
 
   </tr>
 
