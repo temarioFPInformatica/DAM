@@ -1,6 +1,19 @@
 
 Diseño e implementación de bases de datos relacionales, modelo ER, MySQL, Oracle (Plsql)
 
+# Unidades didacticas
+|Unidad | Nombre | Duración | Bloques | 
+|--|------|--|---|
+|1 | Introducción a las Bases de Datos | 12h | Bloque 1, Bloque 2 |
+|2 | Consultas basicas de selección | 30h | Bloque 3 |
+|3 | Lenguaje SQL en tablas independientes | 18h | Bloque 2, Bloque 4 |
+|4 | Diseño del modelo Entidad/Relación | 18h | Bloque 6  |
+|5 | Transformación al modelo relacional e implementación| 18h | Bloque 2, Bloque 4, Bloque 6 |
+|6 | Consultas sobre tablas relacionadas | 24h | Bloque 3, Bloque 4 |
+|7 | Programación de bases de datos | 46h | Bloque 5 |
+|8 | Uso de BBDD objeto-relacionales | 10h | Bloque 7 |
+
+# Tecnologias empleadas
 <center>
 <table>
   <tr>
@@ -16,3 +29,4 @@ Diseño e implementación de bases de datos relacionales, modelo ER, MySQL, Orac
    
 </table>
 </center>
+
