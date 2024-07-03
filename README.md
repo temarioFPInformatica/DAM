@@ -7,7 +7,7 @@
 |4 | Proyecto dirigido al diseño y desarrollo de un sitio Web. | 18h | Bloque 2, Bloque 3  |
 |5 | Desarrollo web en cliente: JAVASCRIPT | 18h | Bloque 2, Bloque 3 |
 |6 | Desarrollo web en entorno servidor: PHP | 24h | Bloque 2, Bloque 3 |
-|7 | Transformación de documentos XML. | 10h | Bloque 5 |
+|7 | Transformación de documentos XML. | 10h | Bloque4, Bloque 5 |
 |8 | Manejo de Información en JSON | 10h | Bloque 1, Bloque 6 |
 |9 | Diseño e implantación de un sistema de gestión empresarial. | 39h | Bloque 7 |
 
