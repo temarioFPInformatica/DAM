@@ -10,7 +10,7 @@
 |5 | Desarrollo de clases| 24h |  |
 |6 | Utilización avanzada de clases | 24h |  |
 |7 | Aplicación de las estructuras de almacenamiento | 24h |  |
-|8 | JavaFX. | 24h | Bloque 7 |
+|8 | JavaFX. | 24h |  |
 |9 | - Gestión de bases de datos: relacionales y orientadas aobjetos. Persistencias de objetos. | 24h |  |
 
 # Tecnologias empleadas
