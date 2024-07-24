@@ -1,0 +1,64 @@
+body{
+  background-color: rgb(100, 100, 100);
+  
+}
+div{
+  background-color: rgb(230, 220, 235);
+  
+}
+div#cabecera{
+  padding: 5px;
+  font-size: xx-large;
+  text-align: center;
+  position: fixed;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 50px;
+}
+div#pie{
+  position: fixed;
+  bottom:0px;
+  left:0px;
+  width: 100%;
+  text-align: right;
+}
+div#contenedor{
+
+}
+div#titulares{
+  width:90%;
+  position: fixed;
+  left:10%;
+  top:60px;
+  height:80px;
+}
+div.titular{
+  width:30%;
+  float:left;
+  
+}
+div#noticias{
+  width: 90%;
+  position:relative;
+  top:140px;
+  left:10%;
+  /* Permite meter una capa más abajo de lo que le corresponde
+   * Algo así como "enviar al fondo" una posición de más (lo que
+   * se indica con -1)*/
+  z-index:-1;
+}
+div.columna_noticias{
+  float:left;
+  width:33.3%;
+}
+div#publi{
+  height: 100%;
+  position: fixed;
+  top:60px;
+  left:0px;
+  width:10%;
+}
+
+
+

@@ -1,0 +1,22 @@
+h1#bienvenida{
+  color: rgb(66, 66, 220);
+  font-family: "Comic Sans MS";
+}
+
+p{
+  background-color: rgb(240, 250, 230);
+  margin-left:15%;
+  margin-right: 15%;
+  padding:5em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: justify;
+}
+
+tr.par{
+  background-color: rgb(180, 180, 180);
+}
+
+tr.impar{
+  background-color: rgb(220,220, 220);
+}

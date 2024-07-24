@@ -1,0 +1,25 @@
+div{
+    border: solid red 1px;
+    
+}
+div#cabecera{
+    margin-top: 50px;
+    
+}
+div#contenido{
+    background-color:rgb(220, 230, 220);
+    width: 75%;
+    float: right;
+}
+div#publicidad{
+    width:22%;
+    float:left;
+}
+nav{
+    position: fixed;
+    top:0px;
+    left:0px;
+    background-color: rgb(255,255,255);
+    width:100%;
+    z-index:1;
+}

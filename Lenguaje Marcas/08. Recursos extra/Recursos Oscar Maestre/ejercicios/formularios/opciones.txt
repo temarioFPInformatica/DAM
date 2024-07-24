@@ -1,0 +1,32 @@
+sexo:Hombre:Mujer
+sexo:Mujer:Hombre
+asignatura:Historia:Geografía:Lengua:Matemáticas
+asignatura:Geografía:Lengua:Matemáticas:Historia
+asignatura:Lengua:Matemáticas:Historia:Geografía
+asignatura:Matemáticas:Historia:Geografía:Lengua
+medio_transporte:Automóvil:Moto:Autobús
+lenguaje:Java:Python:HTML:Visual Basic
+lenguaje:Python:HTML:Visual Basic:Java
+lenguaje:Java:Python:HTML:Visual Basic:CSS
+procesador:Intel:AMD
+procesador:AMD:Intel i5:Intel i7
+hardware:Tarjeta aceleradora:Monitor LED:SSD
+hardware:Monitor LED:SSD
+idioma:Español:Inglés:Alemán:Francés
+idioma:Inglés:Alemán:Francés
+ciclo:SMIR:ASIR:DAM:DAW
+ciclo:ASIR:DAM:DAW
+provincia:Albacete:Ciudad Real:Cuenca:Guadalajara:Toledo
+dia:Lunes:Martes:Miércoles:Jueves:Sabado
+preferencia:Ciencias:Letras
+sistema:Windows:Mac:Linux
+conexion:Wifi:Cable:Fibra
+editor:Notepad:Emacs:Otro
+aula:A01:A02:A03
+velocidad:100 Mbits:1000 Mbits
+red:2G:3G:4G
+conector:USB:Paralelo:PS2
+escritorio:KDE:GNOME:Unity
+formato:JPG:PNG
+navegador:Firefox:Chrome:Opera:IE
+ide:Eclipse:Netbeans:Notepad:IDEA
