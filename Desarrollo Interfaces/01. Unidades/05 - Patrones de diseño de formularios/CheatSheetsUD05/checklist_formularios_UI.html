@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>✅ Checklist – Evaluación de Formularios UI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 40px auto;
+      background: #fff;
+      color: #333;
+      max-width: 1000px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #005b99;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #eaf4ff;
+    }
+    td.marcar {
+      text-align: center;
+      width: 80px;
+      font-weight: bold;
+    }
+    .categoria {
+      background: #f0f0f0;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    .nota {
+      background-color: #ffe;
+      border-left: 5px solid #e6c200;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>✅ Checklist – Evaluación de Formularios UI</h1>
+  <p>Revisa cada aspecto del formulario. Marca ✔️ si está implementado correctamente o ❌ si falta o es mejorable.</p>
+
+  <table>
+    <tr><th>Aspecto a evaluar</th><th>Explicación</th><th class="marcar">✔️ / ❌</th></tr>
+
+    <tr><td class="categoria" colspan="3">📐 Estructura y flujo</td></tr>
+    <tr>
+      <td>Flujo lógico del formulario</td>
+      <td>El orden sigue una secuencia natural (ej. nombre → email → contraseña).</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Diseño en una sola columna</td>
+      <td>Se utiliza una columna vertical, especialmente en pantallas pequeñas.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Secciones bien agrupadas</td>
+      <td>Los campos están organizados en bloques temáticos claros (datos personales, dirección...).</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Formulario dividido en pasos si es largo</td>
+      <td>Se emplea un wizard para no mostrar demasiados campos de golpe.</td>
+      <td class="marcar"></td>
+    </tr>
+
+    <tr><td class="categoria" colspan="3">🧩 Tipos de campos y diseño</td></tr>
+    <tr>
+      <td>Campos con etiquetas visibles y claras</td>
+      <td>No se depende del placeholder como etiqueta. La descripción está siempre visible.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Inputs adaptados al tipo de dato</td>
+      <td>Ej. teclado numérico para <code>tel</code>, selector de fecha para <code>date</code>, etc.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Uso correcto de checkboxes y radios</td>
+      <td>Checkboxes para selección múltiple, radios para una única opción.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Campos dependientes bien implementados</td>
+      <td>Se muestran solo cuando la opción anterior lo requiere (ej. provincias tras país).</td>
+      <td class="marcar"></td>
+    </tr>
+
+    <tr><td class="categoria" colspan="3">🔁 Feedback y validación</td></tr>
+    <tr>
+      <td>Validación en tiempo real o al salir del campo</td>
+      <td>Errores como email inválido se muestran sin tener que enviar el formulario.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Mensajes de error claros y específicos</td>
+      <td>En vez de "Campo inválido", se usa "Introduce un email con @"</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Resumen de errores al final</td>
+      <td>Se muestra una alerta general si hay errores antes de enviar.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Indicadores visuales (color + iconos)</td>
+      <td>Se usan colores (rojo/verde) y símbolos (❌ / ✅) para validar campos.</td>
+      <td class="marcar"></td>
+    </tr>
+
+    <tr><td class="categoria" colspan="3">♿ Accesibilidad</td></tr>
+    <tr>
+      <td>Etiquetas semánticas (<code>&lt;label for="..."&gt;</code>)</td>
+      <td>Cada input tiene una etiqueta asociada correctamente.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Uso de atributos ARIA donde es necesario</td>
+      <td><code>aria-describedby</code>, <code>aria-invalid</code>… usados para accesibilidad adicional.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Contraste de color suficiente</td>
+      <td>El texto es legible sobre el fondo (mínimo 4.5:1).</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Navegación por teclado completa</td>
+      <td>Todos los campos y botones se pueden recorrer con Tab y Enter.</td>
+      <td class="marcar"></td>
+    </tr>
+
+    <tr><td class="categoria" colspan="3">📱 Mobile-first</td></tr>
+    <tr>
+      <td>Inputs grandes y táctiles</td>
+      <td>Altura mínima 48px, padding generoso, fácil de tocar.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Formulario usable sin hacer zoom</td>
+      <td>No hay elementos que requieran ampliar o desplazar horizontalmente.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Scroll automático al enfocar</td>
+      <td>El campo enfocado no queda oculto bajo el teclado virtual.</td>
+      <td class="marcar"></td>
+    </tr>
+
+    <tr><td class="categoria" colspan="3">📛 Nomenclatura UI</td></tr>
+    <tr>
+      <td>Prefijos claros según tipo</td>
+      <td>Ej.: <code>btn_</code> para botones, <code>txt_</code> para texto, <code>chk_</code> para checkbox…</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>snake_case en identificadores</td>
+      <td>Los nombres usan guiones bajos y son legibles.</td>
+      <td class="marcar"></td>
+    </tr>
+    <tr>
+      <td>Modificadores coherentes</td>
+      <td>Ej.: <code>_error</code>, <code>_disabled</code>, <code>_active</code>, etc.</td>
+      <td class="marcar"></td>
+    </tr>
+
+  </table>
+
+  <div class="nota">
+    📝 <strong>Consejo final:</strong> Si encuentras más de 5 aspectos sin marcar, es recomendable revisar el formulario antes de publicarlo.
+  </div>
+
+</body>
+</html>

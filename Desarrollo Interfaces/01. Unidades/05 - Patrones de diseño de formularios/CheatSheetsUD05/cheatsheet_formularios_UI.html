@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cheat Sheet UI – Patrones de Diseño de Formularios</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      color: #333;
+    }
+    h1, h2 {
+      color: #005b99;
+      margin-top: 1.5em;
+    }
+    .bloque {
+      margin: 1em 0;
+      padding: 1em;
+      border-left: 5px solid #0077cc;
+      background: #eef6fc;
+    }
+    .error {
+      border-left-color: #cc0000;
+      background: #ffecec;
+    }
+    .clave {
+      background: #fff8dc;
+      border-left-color: #e6c200;
+    }
+    ul {
+      margin-left: 1.5em;
+    }
+    code {
+      background: #f0f0f0;
+      padding: 2px 4px;
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Cheat Sheet UI – Patrones de Diseño de Formularios</h1>
+  <p>Guía práctica para crear formularios accesibles, eficientes y usables en entornos web y móvil.</p>
+
+  <h2>🎯 Principios generales</h2>
+
+  <div class="bloque">
+    <ul>
+      <li><strong>Claridad:</strong> etiquetas explícitas y agrupación visual lógica.</li>
+      <li><strong>Brevedad:</strong> evitar campos innecesarios, uso de progresión.</li>
+      <li><strong>Flujo lógico:</strong> de general a específico, sin saltos extraños.</li>
+      <li><strong>Feedback:</strong> validación inmediata y contextual.</li>
+      <li><strong>Accesibilidad:</strong> navegación por teclado, buen contraste, compatibilidad con lectores.</li>
+    </ul>
+  </div>
+
+  <h2>📐 Estructuras comunes</h2>
+
+  <div class="bloque">
+    <ul>
+      <li><strong>Una sola columna:</strong> ideal para móvil y formularios breves.</li>
+      <li><strong>Formulario por pasos (wizard):</strong> útil para procesos largos.</li>
+      <li><strong>Campos dependientes:</strong> solo aparecen si son relevantes.</li>
+      <li><strong>Bloques temáticos:</strong> organización por secciones.</li>
+      <li><strong>Autocompletado:</strong> acelera entrada y reduce errores.</li>
+    </ul>
+  </div>
+
+  <h2>🧩 Tipos de campos</h2>
+
+  <div class="bloque">
+    <ul>
+      <li><strong>Texto:</strong> con <code>placeholder</code> + <code>label</code>, validación mientras se escribe.</li>
+      <li><strong>Contraseña:</strong> visibilidad temporal, barra de fortaleza, sugerencias.</li>
+      <li><strong>Checkbox/Radio:</strong> uso según relación entre opciones.</li>
+      <li><strong>Dropdowns:</strong> búsqueda interna, virtualización para muchos ítems.</li>
+      <li><strong>Fechas/archivos:</strong> selectores accesibles, vista previa, errores bien gestionados.</li>
+    </ul>
+  </div>
+
+  <h2>🔁 Feedback y validación</h2>
+
+  <div class="bloque">
+    <ul>
+      <li><strong>Inline:</strong> mensajes junto al campo, con color + icono.</li>
+      <li><strong>Global:</strong> resumen de errores antes de enviar.</li>
+      <li><strong>Colores:</strong> rojo (#DC3545), verde (#28A745), amarillo (#FFC107).</li>
+      <li><strong>Iconografía:</strong> <code>✅</code> éxito, <code>❌</code> error, <code>⚠</code> advertencia.</li>
+    </ul>
+  </div>
+
+  <h2>✨ Microinteracciones útiles</h2>
+
+  <div class="bloque">
+    <ul>
+      <li>Botón cambia a "Enviando…" + animaciones.</li>
+      <li>Errores con sacudida, fade-in o escalado.</li>
+      <li>Progreso de pasos visible y animado.</li>
+      <li>Skeletons al cargar campos dependientes.</li>
+    </ul>
+  </div>
+
+  <h2>📱 Diseño Mobile-First</h2>
+
+  <div class="bloque">
+    <ul>
+      <li>Una sola columna, padding generoso (24px mínimo).</li>
+      <li>Inputs y botones grandes: mínimo 48×48px.</li>
+      <li>Teclado adaptado con <code>type="email"</code>, <code>tel</code>, <code>date</code>…</li>
+      <li>Evitar zoom, scroll automático al enfocar.</li>
+    </ul>
+  </div>
+
+  <h2>♿ Formularios accesibles</h2>
+
+  <div class="bloque">
+    <ul>
+      <li>Etiquetas permanentes y asociadas con <code>&lt;label for="..."&gt;</code>.</li>
+      <li>Uso de ARIA: <code>aria-required</code>, <code>aria-invalid</code>, <code>aria-describedby</code>.</li>
+      <li>Tabulación lógica con <code>tabindex</code>.</li>
+      <li>Pruebas con NVDA, VoiceOver, teclado solamente.</li>
+    </ul>
+  </div>
+
+  <h2>📛 Nomenclatura universal para componentes</h2>
+
+  <div class="bloque">
+    <ul>
+      <li><strong>Prefijos:</strong> <code>btn_</code>, <code>txt_</code>, <code>lbl_</code>, <code>chk_</code>, <code>swt_</code>, <code>ico_</code>, <code>msg_</code></li>
+      <li><strong>Formato:</strong> <code>prefijo_nombre_estado</code></li>
+      <li><strong>Ejemplos:</strong></li>
+      <ul>
+        <li><code>btn_submit_disabled</code> – botón desactivado</li>
+        <li><code>txt_password_error</code> – campo con error</li>
+        <li><code>ico_check_active</code> – icono activo</li>
+      </ul>
+      <li><strong>Estilo:</strong> usar <code>snake_case</code> para máxima compatibilidad.</li>
+      <li><strong>Sufijos comunes:</strong> <code>_disabled</code>, <code>_error</code>, <code>_hover</code>, <code>_active</code>, <code>_small</code></li>
+    </ul>
+  </div>
+
+  <div class="clave">
+    ✅ <strong>Consejo:</strong> Esta convención es compatible con HTML, React, Vue, Flutter y proyectos nativos.
+  </div>
+
+</body>
+</html>
