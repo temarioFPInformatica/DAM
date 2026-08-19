@@ -1,0 +1,51 @@
+use bdfarmacia;
+DELIMITER //
+CREATE TRIGGER nombre_enfermos_mays 
+BEFORE INSERT ON ENFERMOS
+FOR EACH ROW
+BEGIN
+	SET NEW.NOME = UPPER(NEW.NOME);
+END;
+//
+DELIMITER ;
+
+use bdfarmacia;
+DELIMITER //
+CREATE TRIGGER nombre_farmacos_mays
+BEFORE INSERT ON FARMACOS
+FOR EACH ROW 
+BEGIN
+	SET NEW.NOMF = UPPER(NEW.NOMF);
+END;
+//
+DELIMITER ;
+
+use bdfarmacia;
+DELIMITER //
+CREATE TRIGGER actualizar_consumo_farmacos 
+AFTER UPDATE ON FARMACOS
+FOR EACH ROW
+BEGIN
+	UPDATE CONSUMO SET CODF = NEW.CODF WHERE CODF = OLD.CODF;
+END;
+// 
+DELIMITER ;
+
+use bdfarmacia;
+DELIMITER //
+CREATE TRIGGER eliminacion_enfermos
+BEFORE DELETE ON ENFERMOS
+FOR EACH ROW
+BEGIN 
+	DECLARE contador INT;
+    SELECT COUNT(*) INTO contador FROM CONSUMO WHERE CODIGO_E = OLD.CODIGO_E;
+    IF contador > 0 THEN
+		SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = "No se podrá eliminar al enferm@ hasta que no haya registros de consumo";
+	END IF;
+END;
+//
+DELIMITER ;
+
+
+
+

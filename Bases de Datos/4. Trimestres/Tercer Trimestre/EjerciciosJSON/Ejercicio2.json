@@ -1,0 +1,15 @@
+{
+    "nombre_equipo" : "Dallas Mavericks",
+    "color_equitación" : "Azul oscuro",
+    "nombre_entrenador" : "Jason Kidd",
+    "plantilla_histórica" : true,
+    "pagina_web" : "https://www.mavs.com/",
+    "jugadores" : {
+        "base" : [
+            { "nombre": "Donkic", "dorsal": 77}
+        ],
+        "alero": [
+            { "nombre": "Kyrie Irving", "dorsal": 3}
+        ]
+    }
+}
